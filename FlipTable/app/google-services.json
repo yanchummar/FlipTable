@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "785836603075",
+    "firebase_url": "https://fliptable-app.firebaseio.com",
+    "project_id": "fliptable-app",
+    "storage_bucket": "fliptable-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785836603075:android:6f2f275243643194",
+        "android_client_info": {
+          "package_name": "co.fliptable.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785836603075-p4vfd7khho6925ngo4r6uampclog87e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWK9AAv4fLFdOMjv2GCsU2FPv2fep5C0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785836603075:android:efef5c5781bed5a9",
+        "android_client_info": {
+          "package_name": "co.fliptable.business.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785836603075-p4vfd7khho6925ngo4r6uampclog87e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWK9AAv4fLFdOMjv2GCsU2FPv2fep5C0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785836603075:android:c78ccbb8ef23d741",
+        "android_client_info": {
+          "package_name": "com.application.fliptable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785836603075-p4vfd7khho6925ngo4r6uampclog87e8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWK9AAv4fLFdOMjv2GCsU2FPv2fep5C0Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

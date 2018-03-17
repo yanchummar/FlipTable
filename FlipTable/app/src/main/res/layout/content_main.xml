@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.application.fliptable.activities.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#e5e5e5"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="5dp"
+                    app:contentPaddingLeft="12dp"
+                    app:contentPaddingTop="6dp"
+                    app:contentPaddingBottom="6dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:padding="1dp"
+                            android:src="@drawable/search"/>
+                        <EditText
+                            android:id="@+id/search_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:layout_marginLeft="6dp"
+                            android:maxLines="1"
+                            android:inputType="textCapSentences"
+                            android:imeOptions="actionSearch"
+                            android:hint="Search by restaurant name..."
+                            android:background="@android:color/transparent"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/filter_button"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="5dp"
+                    app:contentPadding="6dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:rotation="-90"
+                            android:src="@drawable/sliders"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#a6a6a6"
+                            android:text="Filter"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/main_content_holder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/trending_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginLeft="22dp">
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_trending_up_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trending Spots"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:visibility="visible"
+                        android:id="@+id/trendingspot_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:clipToPadding="false"/>
+
+                    <LinearLayout
+                        android:visibility="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginLeft="22dp">
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginTop="1dp"
+                            android:src="@drawable/ic_restaurant_black_24dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All Restaurants"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/restaurants_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="24dp"
+                    android:paddingTop="6dp"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"/>
+            </LinearLayout>
+
+            <io.supercharge.shimmerlayout.ShimmerLayout
+                android:visibility="gone"
+                android:id="@+id/shimmer_layout_mainactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="16dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#e0e0e0" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+                        <include layout="@layout/loading_card_item" />
+                        <include layout="@layout/loading_card_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="16dp"/>
+                        <include layout="@layout/loading_card_item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginTop="16dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="145dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="26dp"
+                        android:layout_marginLeft="18dp"
+                        android:background="#e0e0e0" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="14dp">
+                        <include layout="@layout/loading_card_main_item" />
+                        <include layout="@layout/loading_card_main_item"/>
+                        <include layout="@layout/loading_card_main_item" />
+                    </LinearLayout>
+                </LinearLayout>
+            </io.supercharge.shimmerlayout.ShimmerLayout>
+
+            <include layout="@layout/error_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

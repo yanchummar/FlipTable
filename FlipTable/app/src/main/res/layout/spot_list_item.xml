@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_margin="1dp"
+                app:cardCornerRadius="5dp">
+                <ImageView
+                    android:id="@+id/spot_item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/spot_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="The Post Office Cafe"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/spot_item_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textSize="12sp"
+                    tools:text="Rajouri Garden, New Delhi"
+                    android:textAllCaps="true"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/spot_item_ratingcard"
+                android:layout_width="34dp"
+                android:layout_height="26dp"
+                app:cardCornerRadius="3dp"
+                android:layout_margin="1dp"
+                app:cardBackgroundColor="@android:color/holo_green_light">
+                <TextView
+                    android:id="@+id/spot_item_ratingtextview"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4.5"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/spot_item_cuisines_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cuisines:"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/spot_item_cuisines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="12sp"
+                tools:text="North Indian, Fast Food, Asian"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+            <TextView
+                android:id="@+id/spot_item_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cost:"
+                android:textSize="12sp"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/spot_item_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="12sp"
+                tools:text="Rs.1600 for two"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+            <include layout="@layout/custom_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+            <TextView
+                android:id="@+id/spot_item_ratingbar_text"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:layout_marginLeft="6dp"
+                tools:text="Based on 10 Ratings"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verified_text_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/nearby_imageview_icon"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginTop="1dp"
+                android:paddingBottom="1dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_near_me_black_24dp"/>
+            <TextView
+                android:id="@+id/spot_item_nearby_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textSize="12sp"
+                tools:text="1.20 km from here"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/openstatus_imageview_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_access_time_black_24dp"/>
+            <TextView
+                android:id="@+id/spot_item_openstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:text="Open Now"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/credits_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingTop="7dp"
+            android:paddingLeft="-5dp"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

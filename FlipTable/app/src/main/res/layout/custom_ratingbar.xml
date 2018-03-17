@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_star_1"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_stars_black_24dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_star_2"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_stars_black_24dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_star_3"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_stars_black_24dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_star_4"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_stars_black_24dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_star_5"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/ic_stars_black_24dp"/>
+</LinearLayout>
