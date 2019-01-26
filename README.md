@@ -5,7 +5,7 @@ FlipTable is an app that has a smooth user interface and functions as a Restaura
 
 Then the restaurants can find the request in the "FlipTable for Restaurants" app and then accept for reject the reservation request. These reservation requests are easily sorted and arranged in the restaurant's app and can be viewed anytime.
 
-Made by Yan Chummar, at 14 Years.
+Made with ♥ by Yan Chummar, at 14 Years of Age.
 
 #### Consumer App - Screenshots
 ![Screenshot 1](https://raw.githubusercontent.com/yanchummar/FlipTable/master/Screenshots/screenshot_1.jpg) ![Screenshot 2](https://raw.githubusercontent.com/yanchummar/FlipTable/master/Screenshots/screenshot_2.jpg) ![Screenshot 3](https://raw.githubusercontent.com/yanchummar/FlipTable/master/Screenshots/screenshot_3.jpg) ![Screenshot 4](https://raw.githubusercontent.com/yanchummar/FlipTable/master/Screenshots/screenshot_4.jpg)
